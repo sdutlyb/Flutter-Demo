@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart' as prefix1;
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart' as prefix0;
+import './FavoriteWidget.dart';
 
 void main() => runApp(MyApp());
 
@@ -250,7 +249,6 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: ListView(
-        // color: Color.fromRGBO(245, 245, 245, 1),
         children: [
             titleSection,
             buttonsSection,
@@ -259,6 +257,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ratingBar,
             gridViewSection,
             listViewSection,
+            FavoriteWidget(),
         ],
       ),
     );
