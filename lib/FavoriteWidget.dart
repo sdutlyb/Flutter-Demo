@@ -39,7 +39,17 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
             : Icon(Icons.favorite, color: Colors.grey[400],),
             onPressed: _favoritePressed,
           ),
-          Text('$_favoriteCount'),
+          Expanded(
+            child: Text('$_favoriteCount'),
+          ),
+          FlatButton(
+            onPressed: () {
+              AlertDialog(
+                title: Text('温馨提示')
+              );
+            },
+            child: Text('详情'),
+          )
         ],
       ),
     );
